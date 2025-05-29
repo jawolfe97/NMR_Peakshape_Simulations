@@ -1,1 +1,1 @@
-# NNMR_Peakshape_Simulations
+# NMR_Peakshape_Simulations
