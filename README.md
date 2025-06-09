@@ -12,7 +12,7 @@ ppm_center <- 8.0                       # Spectral center (ppm)
 MHz <- 700                              # Spectrometer frequency (MHz)
 ```
 ___________________________________________________________________________
-File 2
+_**NMR_SingleSimulation_Visualizer.R**_
 ![Description](https://github.com/jawolfe97/NMR_Peakshape_Simulations/blob/main/Single_Simulation.svg)
 ___________________________________________________________________________ 
 ```r
