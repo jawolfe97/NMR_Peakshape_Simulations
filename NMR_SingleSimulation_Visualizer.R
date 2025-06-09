@@ -13,7 +13,7 @@ fftshift <- function(x) {
 }
 
 ## --- "Sliders": Adjustable Parameters ---
-log_kex   <- 2       # Exchange rate (log10 scale in s???น)
+log_kex   <- 2       # Exchange rate (log10 scale in s???ยน)
 delta_ppm <- 0.5       # Chemical shift difference (ppm), usually < 2 ppm
 res_num   <- 88      # Number of residues (e.g. 363 residues ~ 40 kDa protein)
 ppm_center <- 8.0      # Spectral center (ppm)
@@ -25,7 +25,7 @@ pA        <- 0.5       # Population of State A (0 = all B, 1 = all A)
 # --- Derived Parameters ---
 protein_kDa <- res_num * 110 / 1000     # MW in kDa derived from residue count
 pB  <- 1 - pA
-R2  <- 6 + 0.3 * protein_kDa            # Empirical R2 for folded proteins (s???น)
+R2  <- 6 + 0.3 * protein_kDa            # Empirical R2 for folded proteins (s???ยน)
 
 # --- Simulation Constants ---
 n_points <- 2048
@@ -77,7 +77,7 @@ spec_imag <- Im(spectrum)
 # --- Exchange regime assessment ---
 delta_omega <- 2 * pi * delta_Hz  # angular frequency diff in rad/s
 
-{s
+{
 # # --- Define exchange regime based on ???? and kex ---
 # exchange_regime <- if (kex < delta_omega / 10) {
 #   "Slow exchange (kex << ????): Separate peaks are visible."
@@ -146,8 +146,8 @@ text(0.5, 0.73, paste("???? (ppm):", delta_ppm), cex = 1.2)
 text(0.5, 0.66, paste("???? (rad/s):", round(delta_omega, 1)), cex = 1.2)
 text(0.5, 0.59, paste("Number of residues:", res_num), cex = 1.2)
 text(0.5, 0.52, paste("MW (kDa):", round(protein_kDa, 2)), cex = 1.2)
-text(0.5, 0.45, paste("R2 (s???น):", round(R2, 2)), cex = 1.2)
+text(0.5, 0.45, paste("R2 (s???ยน):", round(R2, 2)), cex = 1.2)
 text(0.5, 0.38, paste("Population A:", round(pA, 2)), cex = 1.2)
-text(0.5, 0.31, paste0("kex (s???น): 10^", round(log_kex, 2), " = ", signif(kex, 3)), cex = 1.2)
+text(0.5, 0.31, paste0("kex (s???ยน): 10^", round(log_kex, 2), " = ", signif(kex, 3)), cex = 1.2)
 text(0.5, 0.24, paste("Exchange regime:", exchange_regime), cex = 1.2, font = 2)
 }
