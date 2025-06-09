@@ -1,5 +1,5 @@
 # NMR_Peakshape_Simulations
-NMR_Simulation_Individual_Simulation_Visualizer_kex_vs_pa.R
+**NMR_SimulationMatrix_kex_vs_pa.R**
 ![Description](https://github.com/jawolfe97/NMR_Peakshape_Simulations/blob/main/pA%20vs%20kex.svg)
  ___________________________________________________________________________
  --- Adjustable Parameters ---
