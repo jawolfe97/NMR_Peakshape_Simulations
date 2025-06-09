@@ -1,6 +1,6 @@
 # NMR_Peakshape_Simulations
 
-Encoding and generalizing the simulations present in this article: https://nmr.chem.ucsb.edu/education/part3.html#exchange
+Encoding and generalizing the simulations [UCSB NMR Theory and Techniques - Chapter 12](https://nmr.chem.ucsb.edu/education/part3.html#exchange). 
 
 **NMR_SimulationMatrix_kex_vs_pa.R**
 ![Description](https://github.com/jawolfe97/NMR_Peakshape_Simulations/blob/main/pA%20vs%20kex.svg)
