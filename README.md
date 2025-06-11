@@ -27,3 +27,7 @@ ppm_center <- 8.0      # Spectral center (ppm)
 MHz       <- 700       # Spectrometer frequency (MHz)
 pA        <- 0.5       # Population of State A (0 = all B, 1 = all A)
 ```
+___________________________________________________________________________ 
+**NMR_Simulation_Solve_for_Kex.R**
+![Description](https://github.com/jawolfe97/NMR_Peakshape_Simulations/blob/main/kex%20Estimation.svg)
+___________________________________________________________________________ 
